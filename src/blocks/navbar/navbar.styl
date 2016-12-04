@@ -1,0 +1,61 @@
+.navbar
+  background #fff
+  box-shadow 0 4px 10px rgba(1, 2, 2, .1)
+  &__content
+    display flex
+    justify-content space-between
+    position relative
+    @media (max-width 992px)
+      justify-content flex-start
+    @media (max-width 540px)
+      flex-direction column
+  &__brand
+    display flex
+    align-items center
+    padding-top 1.25rem
+    padding-bottom 1.25rem
+    @media (max-width 992px)
+      padding-top .8rem
+      padding-bottom .8rem
+    img
+      height 3.125rem
+  &__menu
+    @media (max-width 992px)
+      display block
+      position fixed
+      top 117px
+      right 0
+      bottom 0
+      max-width 320px
+      width 100vw
+      overflow auto
+      transform translateX(100%)
+      background #fff
+      box-shadow inset -8px 4px 10px rgba(1, 2, 2, .1), 0 10px 10px 10px rgba(1, 2, 2, .1)
+      transition transform .4s
+      &.is-open
+        transform translateX(0)
+    @media (min-width 540px)
+      top 66px
+  &__phone
+    display flex
+    padding-left 2rem
+    margin-left 1rem
+    background linear-gradient(90deg, #999, transparent 1px) 0 50% / 100% 50% no-repeat
+    @media (max-width 991px)
+      background none
+    @media (max-width 540px)
+      padding-left 0
+      padding-bottom .4rem
+      margin-left 0
+  &__burgerButton
+    display flex
+    align-items center
+    margin-left auto
+    @media (min-width 992px)
+      display none
+    @media (max-width 768px)
+      position absolute
+      right 15px
+      top 50%
+      transform translateY(-50%)
