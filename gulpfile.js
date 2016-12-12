@@ -77,7 +77,7 @@ gulp.task('fonts', function () {
 
 gulp.task('images', function () {
     return gulp.src('./src/**/*.{png,jpg,jpeg,gif,svg}')
-        .pipe(imagemin())
+        .pipe(gulpIf(!isDevelopment, imagemin()))
         .pipe(rename(function (path) {
             path.dirname = '';
         }))

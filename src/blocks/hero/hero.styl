@@ -1,0 +1,26 @@
+.hero
+  display flex
+  align-items center
+  min-height calc(100vh - 90px)
+  margin-top 90px
+  padding-top 30px
+  padding-bottom 30px
+  background linear-gradient(145deg, rgba(25, 80, 125, 0.45) 0%, rgba(255, 255, 255, 0.45) 100%),
+             url('../images/hero-bg.png') center / cover no-repeat fixed
+  @media (max-width 31rem)
+    text-align center
+  &__info
+    max-width 31rem
+    color white
+  &__caption
+    font 700 3rem 'PT Sans', sans-serif
+    text-transform uppercase
+    margin-top 0
+    margin-bottom 38px
+    @media (max-width 31rem)
+      br
+        display none
+  &__description
+    font 1rem/1.5 'Titillium Web', sans-serif
+    margin-top 0
+    margin-bottom 50px
