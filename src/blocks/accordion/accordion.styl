@@ -1,0 +1,31 @@
+.accordion
+  &__header
+    display flex
+    justify-content space-between
+    margin-bottom 1rem
+    padding-top 1rem
+    padding-bottom 1rem
+    border-bottom 1px solid color_grey
+    cursor pointer
+    &:first-child
+      padding-top 0
+    &&_active
+      cursor default
+      border-color color_lightgrey
+      i
+        transform rotate(-180deg)
+        color color_lightgrey
+      + .accordion__body
+        max-height 12rem
+        transition .4s linear
+    i
+      color color_grey
+      font-size 1.8rem
+      -webkit-text-stroke 3px white
+      transition .4s
+  &__body
+    padding-bottom 0
+    overflow hidden
+    color color_grey
+    max-height 0
+    transition .4s linear

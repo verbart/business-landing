@@ -1,0 +1,28 @@
+.sectionHeader
+  padding-top 65px
+  padding-bottom 40px
+  text-align center
+  &__caption
+    position relative
+    margin-top 0
+    margin-bottom 20px
+    padding-bottom 20px
+    &:before, &:after
+      content ''
+      position absolute
+      display block
+      height 0.125rem
+      bottom 0
+      left 50%
+      transform translateX(-50%)
+    &:before
+      width 80%
+      max-width 12.813rem
+      background-color #eee
+    &:after
+      width 33%
+      max-width 4.25rem
+      background color_blue
+  &__description
+    font-family italic 1rem 'PT Serif', serif
+    color #999
