@@ -1,0 +1,37 @@
+.member
+  max-width 300px
+  margin-left auto
+  margin-right auto
+  margin-bottom 40px
+  &__photo
+    height 280px
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+    @media (max-width 1200px)
+      height 240px
+  &__info
+    display inline-block
+    width 60%
+    transform translateY(-50%)
+    background-color color_blue
+    opacity .95
+    color white
+  &__name, &__profession
+    line-height 1
+    padding 10px
+  &__profession
+    opacity 0.65
+    font-size .813rem
+    font-style italic
+  &__socials
+    float: right;
+    width 40%
+    padding-top .8rem
+    text-align right
+  &__socialLink
+    color color_smoky
+    margin 4%
+    transition .4s
+    &:hover
+      color color_blue
