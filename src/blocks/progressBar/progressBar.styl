@@ -1,0 +1,28 @@
+.progressBar
+  position relative
+  height 0.75rem
+  margin-top 1.8rem
+  margin-bottom 3rem
+  background-color color_lightgrey
+  border-radius 0.25rem
+  &__title, &__info
+    display inline-block
+    position absolute
+    top -2rem
+    color color_black
+    font-weight 700
+    text-transform uppercase
+  &__title
+    left 0
+    font-size 1.063rem
+  &__info
+    position absolute
+    transform translateX(-50%)
+    font-size 1rem
+  &__progress
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    border-radius inherit
+    background color_blue

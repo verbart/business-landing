@@ -9,7 +9,12 @@
     cursor pointer
     &:first-child
       padding-top 0
-    &&_active
+    i
+      color color_grey
+      font-size 1.8rem
+      -webkit-text-stroke 3px white
+      transition .4s
+    &_active
       cursor default
       border-color color_lightgrey
       i
@@ -18,11 +23,6 @@
       + .accordion__body
         max-height 12rem
         transition .4s linear
-    i
-      color color_grey
-      font-size 1.8rem
-      -webkit-text-stroke 3px white
-      transition .4s
   &__body
     padding-bottom 0
     overflow hidden
