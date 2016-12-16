@@ -8,8 +8,10 @@
   background linear-gradient(145deg, rgba(25, 80, 125, 0.45) 0%, rgba(255, 255, 255, 0.45) 100%),
              url('../images/hero-bg.png') center / cover no-repeat
   @media (max-width 992px)
+    min-height calc(100vh - 66px)
     margin-top 66px
   @media (max-width 540px)
+    min-height calc(100vh - 116px)
     margin-top 116px
     text-align center
   &__info
