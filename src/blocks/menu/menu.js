@@ -8,6 +8,7 @@ $('.menu').on('click', '.menu__link', function (e) {
     const top = anchor.offset().top - $('.navbar').height() + 1;
 
     $('body,html').animate({scrollTop: top}, 1000);
+    $('.navbar__menu.is-open').removeClass('is-open');
 });
 
 $(window).scroll(function () {
