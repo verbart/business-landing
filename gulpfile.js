@@ -103,20 +103,15 @@ gulp.task('clean', function () {
     return del('./dist')
 });
 
-const tasks = [
-    'styles',
-    'views',
-    'scripts',
-    'fonts',
-    'images'
-];
-
 gulp.task('build', gulp.series(
     'clean',
-    isDevelopment
-        ? gulp.parallel.apply(null, tasks)
-        : gulp.series.apply(null, tasks)
-));
+    gulp.parallel(
+        'styles',
+        'views',
+        'scripts',
+        'fonts',
+        'images'
+    )));
 
 gulp.task('default', gulp.series(
     'build',
