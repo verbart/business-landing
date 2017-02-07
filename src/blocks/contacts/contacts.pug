@@ -1,0 +1,20 @@
+section#contact.contacts
+    .sectionHeader.container
+        h2.heading.heading_2.sectionHeader__caption Contacts
+        .sectionHeader__description Vivamus magna purus, ullamcorper sed nunc sed, dignissim ullamcorper tortor
+
+    .container
+        .row
+            .col-md-6
+                include ../address/address
+
+                form.form
+                    .row
+                        .col-sm-6
+                            input.form__input(placeholder='First Name*' name='first_name')
+                        .col-sm-6
+                            input.form__input(placeholder='Last Name*' name='last_name')
+
+                    input.form__input(type='email' placeholder='Email*' name='email')
+                    input.form__input(placeholder='Subject' name='subject')
+                    textarea.form__input.form__textarea(placeholder='Message' rows='4')
